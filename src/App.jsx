@@ -1,12 +1,20 @@
 
 import './App.css'
-import RefFrom from './Components/RefFrom/RefFrom'
-import StateFullForm from './Components/StateFullForm/StateFullForm'
-import HooksForm from './Components/useInputState/HooksForm'
+import Reuseable from './Components/Reuseable/Reuseable'
+// import RefFrom from './Components/RefFrom/RefFrom'
+// import StateFullForm from './Components/StateFullForm/StateFullForm'
+// import HooksForm from './Components/useInputState/HooksForm'  
 // import SimpleForm from './Components/SimpleForm/SimpleForm'
 
 
 function App() {
+  const handelSignup = e => {
+    console.log(e);
+  }
+  const handelUpdate = e => {
+    console.log(e);
+
+  }
 
   return (
     <>
@@ -14,8 +22,9 @@ function App() {
       {/* <SimpleForm></SimpleForm> */}
       {/* <StateFullForm></StateFullForm> */}
       {/* <RefFrom></RefFrom> */}
-      <HooksForm></HooksForm>
-    
+      {/* <HooksForm></HooksForm> */}
+      <Reuseable formTitle='Sign up' handelSubmit={handelSignup}></Reuseable>
+      <Reuseable formTitle='Update Profile' handelSubmit={handelUpdate}></Reuseable>
     </>
   )
 }
