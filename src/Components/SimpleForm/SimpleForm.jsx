@@ -1,4 +1,4 @@
-
+// normal form use 
 
 const SimpleForm = () => {
    
