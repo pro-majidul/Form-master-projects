@@ -1,6 +1,7 @@
 
 import './App.css'
-import Reuseable from './Components/Reuseable/Reuseable'
+import Grandpa from './Components/Grandpa/Grandpa'
+// import Reuseable from './Components/Reuseable/Reuseable'
 // import RefFrom from './Components/RefFrom/RefFrom'
 // import StateFullForm from './Components/StateFullForm/StateFullForm'
 // import HooksForm from './Components/useInputState/HooksForm'  
@@ -8,13 +9,13 @@ import Reuseable from './Components/Reuseable/Reuseable'
 
 
 function App() {
-  const handelSignup = e => {
-    console.log(e);
-  }
-  const handelUpdate = e => {
-    console.log(e);
+  // const handelSignup = e => {
+  //   console.log(e);
+  // }
+  // const handelUpdate = e => {
+  //   console.log(e);
 
-  }
+  // }
 
   return (
     <>
@@ -23,7 +24,7 @@ function App() {
       {/* <StateFullForm></StateFullForm> */}
       {/* <RefFrom></RefFrom> */}
       {/* <HooksForm></HooksForm> */}
-      <Reuseable
+      {/* <Reuseable
        formTitle='Sign up'
         handelSubmit={handelSignup}>
           <h3>Sign Up</h3>
@@ -34,7 +35,8 @@ function App() {
         handelSubmit={handelUpdate}>
           <h3>Update Profile</h3>
           <p>Update your Profile here</p>
-        </Reuseable>
+        </Reuseable> */}
+        <Grandpa></Grandpa>
     </>
   )
 }
