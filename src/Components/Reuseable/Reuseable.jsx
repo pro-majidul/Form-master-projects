@@ -1,5 +1,5 @@
 
-const Reuseable = ({formTitle , handelSubmit}) => {
+const Reuseable = ({formTitle ,children, handelSubmit}) => {
 
    const handelSubmitBtn = e =>{
         e.preventDefault();
@@ -12,7 +12,7 @@ const Reuseable = ({formTitle , handelSubmit}) => {
    }
     return (
         <div>
-            <h3>{formTitle}</h3>
+            <h3>{children}</h3>
             <form onSubmit={handelSubmitBtn}>
                 <input type="text" name='name' />
                 <br />
